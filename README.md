@@ -50,9 +50,3 @@ Kedua aplikasi saat ini terhubung ke `broker.hivemq.com` melalui MQTT tanpa TLS 
 - Proyek ini belum menyediakan pengelolaan pengguna/pasien, penyimpanan riwayat, validasi klinis, ataupun pengujian otomatis.
 
 Untuk penggunaan selain demonstrasi lokal, ganti broker publik dengan broker yang dikelola sendiri dan dikonfigurasi menggunakan TLS, autentikasi, serta ACL per pengguna/perangkat. Gunakan topik dan ID klien unik, dan lakukan peninjauan privasi serta keselamatan sebelum menangani data kesehatan.
-
-## Kelayakan untuk GitHub
-
-Berkas proyek yang tersedia tidak menunjukkan kredensial atau data pasien yang tertanam. Karena itu, **repositori public layak untuk membagikan kode sebagai proyek edukasi**, asalkan peringatan dan batasan di atas tetap disertakan. Namun, **implementasi ini tidak layak dipakai untuk layanan publik atau data nyata** karena komunikasi menggunakan broker publik tanpa TLS/autentikasi.
-
-Jika ingin lebih berhati-hati, mulai dengan repositori **private**. Sebelum mengubahnya menjadi public, pastikan seluruh riwayat Git dan berkas yang akan diunggah tidak berisi data pribadi, kredensial, atau materi lain yang tidak boleh dipublikasikan. Membuat repositori private saja tidak membuat komunikasi MQTT dalam aplikasi ini menjadi aman.
